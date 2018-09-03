@@ -36,7 +36,6 @@ void Servo1_cb(const std_msgs::UInt16& Servo1) {
 void Servo2_cb(const std_msgs::UInt16& Servo2) {
   s2.write(Servo2.data);
   nh.loginfo("Servo 2 actuating");
-  front();
 }
 
 
